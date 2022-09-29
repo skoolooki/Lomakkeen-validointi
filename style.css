@@ -8,7 +8,11 @@ label {
     width: 10%;
     margin-top: 6px;
 }
-  
+
+.error {
+    color: red;
+}
+
 .col-85 {
     float: left;
     width: 90%;
