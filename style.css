@@ -11,6 +11,7 @@ label {
 
 .error {
     color: red;
+    display: none;
 }
 
 .col-85 {
