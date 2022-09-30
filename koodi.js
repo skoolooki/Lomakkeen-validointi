@@ -45,7 +45,4 @@ function submit(suku, kieli){
     } else {
         kieli.style.display = "none";
     }
-
-    
-    
 }
