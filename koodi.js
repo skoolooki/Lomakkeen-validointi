@@ -6,7 +6,7 @@ function IDtesti(arvo){
     }
 }
 
-function tyhja(value, id){
+function tyhja(value, id){ 
     if (value.length < 1){
         id.style.display = "inline";
     } else {
@@ -31,6 +31,13 @@ function gmail(arvo, id){
 }
 
 function submit(suku, kieli){
+    IDtesti(document.getElementById("ID").value);
+    tyhja(document.getElementById("salasana").value, document.getElementById('salasanavirhe'))
+    tyhja(document.getElementById("nimi").value, document.getElementById('nimivirhe'))
+    tyhja(document.getElementById("osoite").value, document.getElementById('osoitevirhe'))
+    postinumero(document.getElementById("postinumero").value, document.getElementById('postivirhe'))
+    gmail(document.getElementById("sähköposti").value, document.getElementById('gmailvirhe'))
+
     var mies = document.getElementById("mies");
     var nainen = document.getElementById("nainen");
     var suomi = document.getElementById("suomi")
@@ -44,5 +51,15 @@ function submit(suku, kieli){
         kieli.style.display = "inline";
     } else {
         kieli.style.display = "none";
-    }
+    }  
+
+    const spans = document.querySelectorAll("span.error")
+
+    spans.forEach(span =>{
+        if (span.style.display == "inline"){
+            console.log("virhe")
+        } else {
+            console.log("ei virheitä")
+        }
+    })
 }
