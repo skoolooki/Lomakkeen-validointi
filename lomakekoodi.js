@@ -30,6 +30,8 @@ function gmail(arvo, id){
     }
 }
 
+
+
 function submit(suku, kieli){
     IDtesti(document.getElementById("ID").value);
     tyhja(document.getElementById("salasana").value, document.getElementById('salasanavirhe'))
